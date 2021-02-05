@@ -1,0 +1,6 @@
+node_modules
+.env
+my_example.jsonl
+example.jsonl
+products.json
+orders.json
