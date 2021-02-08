@@ -2,7 +2,7 @@ const client = require('../utils/dbConnect').client;
 
 module.exports = () => {
   return new Promise(async resolve => {
-    await client.connect();
+    //await client.connect();
 
     async function checkDbEmpty() {
       console.log('--CheckingDB: Looking for a data ...')

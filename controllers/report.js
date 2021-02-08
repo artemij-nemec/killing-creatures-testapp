@@ -3,7 +3,7 @@ const client = require('../utils/dbConnect').client
 module.exports = {
   //handle a report request
   async getFreshReport(req, res) {
-    await client.connect();
+    //await client.connect();
     try {
       const report = await client.db('test').collection('reports')
         .aggregate([{$project: {_id:0,bestSellers: 1}}]).sort({_id: -1}).limit(1).toArray();

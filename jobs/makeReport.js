@@ -96,7 +96,7 @@ async function writeDocumentToDb(client,data,dbName,collectionName) {
 
 //main function to make a report
 (async function () {
-  await client.connect();
+  //await client.connect();
 
   const reportSummary = await Promise.all(reportPeriods.map(async period => await makeReportForPeriod(
     period,
